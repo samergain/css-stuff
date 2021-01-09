@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+          border-radius: 5px;
+          color: white;
+          background-color: #0F5897;
+          padding: 5px 10px 8px 10px;
+        }
+        button:hover {
+          animation-name: background-color;
+          animation-duration: 500ms;
+          /* without this line the style will reset to its initial state after the animation is done */
+          animation-fill-mode: forwards;
+        }
+        @keyframes background-color {
+          100% {
+            background-color: #4791d0;
+          }
+        }
+      </style>
+      
+</head>
+<body>
+    <button>Register</button>
+</body>
+</html>
